@@ -1,0 +1,102 @@
+.popular-tours {
+    padding: 5rem 0 10rem 0;
+
+    .popular-tours-heading {
+        font-size: clamp(3rem, 10vw, 7rem);
+        text-align: center;
+        margin-bottom: 6rem;
+        color: $primaryColor;
+        text-shadow: 0 0.1rem 0.2rem $primaryColor;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        @media(max-width:1200px){
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            width:  clamp(12%, 20rem, 25%);
+            position: relative;
+            perspective: 150rem;
+            @media(max-width:1200px){
+                margin: 2rem 0 2rem 0;
+
+               
+                    
+            }
+            .card-image {
+                width: 100%;
+                border-radius: 5px 3px 0 0;
+            }
+
+            .front-side {
+                text-align: center;
+                background-color: $whiteColor;
+                border-radius: 5px;
+				z-index: 10;
+				opacity: .9;
+
+                figcaption {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                 
+                    color: $greyColor;
+                    text-shadow: 0 0 1rem #000;
+                    @media(max-width:500px){
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .card-list {
+                    width: 80%;
+                    margin: auto;
+                    padding: 1.5rem 0 2.5rem 0;
+
+                    .card-list-item {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        border-bottom: 1px solid $lightGreyColor;
+                        padding-bottom: 1.2rem;
+                    }
+                }
+
+				.navigation-button {
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+					padding: 5px;
+					background-color: rgba(255, 255, 255, 0.8);
+					color: $lightGreyColor;
+					border-radius: 5px;
+					border: none;
+					font-size: 0.8rem;
+					font-weight: 600;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+					cursor: pointer;
+				}
+            }
+           
+            
+            
+        }
+        .card {
+            @media(max-width:1200px){
+                width: 60%;
+            }
+        }
+        .card:nth-child(1){
+            @media(max-width:1200px)
+            {margin-top: -6rem;
+            }}
+      
+    }
+}
+
+.changeSideOfCard .back-side{
+    z-index: 11;
+}

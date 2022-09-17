@@ -1,0 +1,202 @@
+.contact {
+    padding: 15rem 0 20rem 0;
+    text-align: center;
+    background: url(/assets/img/contact-us-bg.png) center no-repeat;
+    background-size: cover;
+    animation: contact-bg 10s infinite;
+    @media(max-width: 750px){
+        padding: 5rem 0 2rem 0;
+    }
+    .contact-heading {
+        font-size: 6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $whiteColor;
+        text-shadow: 0 1rem 2rem #000;
+        margin-bottom: 6rem;
+        @media(max-width: 750px){
+            font-size: 3.5rem;
+
+            margin-bottom: 3rem;
+        }
+        @media(max-width:600px){
+			font-size: 2.5rem;
+		}
+    }
+
+    .contact-form {
+        @include center;
+        width: 40rem;
+        height: 30rem;
+        background-color: rgba(255, 255, 255, 0.95);
+        margin: auto;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 1rem 3rem #000;
+        padding: 4rem;
+
+        @media(max-width: 750px){
+            width: 90%;
+        }
+        @media(max-width: 650px){
+padding: 2rem;
+height: 40rem;        }
+
+        .input-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            position: relative;
+
+            input {
+                padding: 3rem 1rem 1rem 1rem;
+                background-color: $secondaryColor;
+                border: 1px solid $secondaryColor;
+                font-size: 1rem;
+                color: $lightGreyColor;
+                letter-spacing: 1px;
+                border-radius: 5px;
+
+                &:focus {
+                    border: 1px solid #ccc;
+                }
+            }
+
+            textarea {
+                padding: 3rem 1rem 1rem 1rem;
+                background-color: $secondaryColor;
+                border: 1px solid $secondaryColor;
+                font-size: 1rem;
+                color: $lightGreyColor;
+                letter-spacing: 1px;
+                border-radius: 5px;
+                max-width: 100%;
+                max-height: 12rem;
+
+                &:focus {
+                    border: 1px solid #ccc;
+                }
+            }
+
+            label {
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: $greyColor;
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+
+            }
+
+
+        }
+
+        .input-groups {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            @media(max-width: 650px){
+                flex-direction: column;         
+            }
+            .input-group {
+                width: 48%;
+                display: flex;
+                flex-direction: column;
+            
+                @media(max-width: 650px){
+                  width: 100%;   
+                  flex-grow: 1;    
+                }
+
+                input {
+                    padding: 3rem 1rem 1rem 1rem;
+                    background-color: $secondaryColor;
+                    border: 1px solid $secondaryColor;
+                    font-size: 1rem;
+                    color: $lightGreyColor;
+                    letter-spacing: 1px;
+                    border-radius: 5px;
+              
+                    &:focus {
+                        border: 1px solid #ccc;
+                    }
+                }
+
+                textarea {
+                    padding: 3rem 1rem 1rem 1rem;
+                    background-color: $secondaryColor;
+                    border: 1px solid $secondaryColor;
+                    font-size: 1rem;
+                    color: $lightGreyColor;
+                    letter-spacing: 1px;
+                    border-radius: 5px;
+                    max-width: 100%;
+                    max-height: 12rem;
+
+                    &:focus {
+                        border: 1px solid #ccc;
+                    }
+                }
+
+
+                label {
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $greyColor;
+                    position: absolute;
+                    top: 1rem;
+                    left: 1rem;
+                }
+            }
+        }
+
+        .form-btn {
+            width: 100%;
+            padding: 1rem;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-top: 1rem;
+            background-color: $lightGreyColor;
+            color: $whiteColor;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 1.5s;
+
+            &:hover {
+                background-color: $greyColor;
+
+            }
+        }
+    }
+}
+
+@keyframes contact-bg {
+    0% {
+        background-color: #3d3d3d;
+    }
+
+    25% {
+        background-color: #ced8e4;
+    }
+
+    50% {
+        background-color: #1e81f3;
+    }
+
+    75% {
+        background-color: #ff7842;
+    }
+
+    100% {
+        background-color: #3d3d3d;
+    }
+}

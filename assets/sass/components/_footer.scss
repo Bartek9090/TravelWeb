@@ -1,0 +1,41 @@
+.footer{
+	background-color: $greyColor;
+	padding: 4rem 0  2rem 0;
+	@media(max-width:750px){
+		padding: 2rem 0  2rem 0;
+	}
+	.footer-list{
+		display: flex;
+		justify-content: center;
+		@media(max-width:500px){
+			flex-direction: column;
+			align-items: center;
+		}
+		.footer-link{
+			font-size: 1.5rem;
+			color: $whiteColor;
+			margin: 0 2rem;
+			z-index: 400;
+			opacity: 0.3;
+			@media(max-width:750px){
+				margin: 0;
+				font-size: 1.2rem;
+			}
+			background-color: transparent;
+			padding: 5px 5px;
+			letter-spacing: 1px;
+
+			&:hover{
+				transform: rotate(-10deg);
+				box-shadow: 0 2rem 2rem #000;
+			}
+		}
+	}
+	.footer-paragraph{
+		text-align: center;
+		font-size: 1.2rem;
+		color: $secondaryColor;
+		letter-spacing: 2px;
+		margin-top: 1rem;
+	}
+}
