@@ -407,7 +407,7 @@ a {
 .contact {
   padding: 15rem 0 20rem 0;
   text-align: center;
-  background: url("/assets/img/contact-us-bg.png") center no-repeat;
+  background: url(img/contact-us-bg.png) center no-repeat;
   background-size: cover;
   -webkit-animation: contact-bg 10s infinite;
           animation: contact-bg 10s infinite;
