@@ -34,7 +34,7 @@ a {
   width: 100%;
   height: calc(100vh - 7rem);
   position: relative;
-  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url(/HTML/portfolio/16-TravelWeb/assets/img/header-bg.jpg) center no-repeat;
+  background: linear-gradient(rgba(18, 113, 255, 0.5), rgba(18, 113, 255, 0.3)), url(img/header-bg.jpg) center no-repeat;
   perspective: 100rem;
 }
 .header .header-text {
@@ -407,7 +407,7 @@ a {
 .contact {
   padding: 15rem 0 20rem 0;
   text-align: center;
-  background: url(img/contact-us-bg.png) center no-repeat;
+  background: url(/img/contact-us-bg.png) center no-repeat;
   background-size: cover;
   -webkit-animation: contact-bg 10s infinite;
           animation: contact-bg 10s infinite;
